@@ -10,14 +10,15 @@ function Transactions({items}){
                 <th>Currency</th>
                 </tr>
             </thead>
-            {items.map((item) => (
+            
+            <tbody>
+                {items.map((item) => (
                 <tr key ={item.id}>
                     <td>{item.type}</td>
                     <td>{item.amount}</td>
                     <td>{item.currency}</td>
                 </tr>
             ))}
-            <tbody>
             </tbody>
             </table>
 
